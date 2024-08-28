@@ -1,0 +1,22 @@
+Sintax para ver los metadatos de una imagen
+
+exiftool "C:\Users\CDTI\Downloads\DSCN0010.jpg"
+
+exiftool "C:\Users\CDTI\Downloads\DSCN0012.jpg"
+
+exiftool "C:\Users\CDTI\Downloads\DSCN0021.jpg"
+
+****************************************************************************************************************************************************************************
+
+Sintax para eliminar metadatos de una imagen:
+
+exiftool -all= "C:\Users\CDTI\Downloads\DSCN0012.jpg"
+
+Sintax para modificar el Copy Right Pato Donald de una imagen:
+
+exiftool -overwrite_original -rights="©2024 Pato Donald, all rights reserved" -CopyrightNotice="©2024 Pato Donald, all rights reserved" "C:\Users\CDTI\Downloads\DSCN0012.jpg"
+
+Sintax para modificar las coordenadas del Planetario de Bogotá de una imagen:
+
+exiftool -exif:gpslatitude=»4°36′44″ -exif:gpslatituderef=N -exif:gpslongitude=»74°04′08" -exif:gpslongituderef=O "C:\Users\CDTI\Downloads\DSCN0021.jpg"
+
